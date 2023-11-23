@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadros perro felipe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        header {
+            background-color: rgb(219, 141, 52); 
+            color: #fff;
+            padding: 20px; 
+        }
+
+        .navbar-custom {
+            background-color: rgb(224, 175, 39); 
+        }
+
+        body {
+            margin: 0;
+            background-image: url('../imagenes/hapi.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            margin-bottom: 100px; 
+            color: #fff; 
+        }
+
+        .product-section {
+            padding: 40px 20px;
+        }
+
+        .product {
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 20px; 
+            margin-bottom: 40px; 
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-text {
+            text-align: center;
+        }
+
+        .buy-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        footer {
+            background-color: rgb(224, 175, 39); 
+            color: #fff; 
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="row">
+        <div class="col-12 text-center">
+            <img src="../Imagenes/LOGO PERROS CAUDRO.png" alt="100px" width="125px"> 
+        </div>
+    </header>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="acercade.html">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de productos con Grid -->
+    <div class="container product-section">
+        <div class="row">
+            <!-- Producto 1 -->
+            <div class="col-md-4 product">
+                <img src="../Imagenes/imagen3.jpg" alt="Producto 1" width="100%">
+                <div class="product-text">
+                    <h3>CUADRO 1</h3>
+                    <p>cuadro de perro llamado bruno.</p>
+                    <a href="producto.html" class="buy-button">Comprar 60$</a>
+                </div>
+            </div>
+            <!-- Producto 2 -->
+            <div class="col-md-4 product">
+                <img src="../Imagenes/imagen1.jpg" alt="Producto 2" width="92%">
+                <div class="product-text">
+                    <h3>CUADRO 2</h3>
+                    <p>Cuadro apaisado de un pero gris.</p>
+                    <a href="producto.html" class="buy-button">Comprar 60$</a>
+                </div>
+            </div>
+            <!-- Producto 3 -->
+            <div class="col-md-4 product">
+                <img src="../Imagenes/imagen2.jpg" alt="Producto 3" width="100%">
+                <div class="product-text">
+                    <h3>CUADRO 3    </h3>
+                    <p>Cuadro de un perro colorido.</p>
+                    <a href="producto.html" class="buy-button">Comprar 60$</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 FelipeCorp</p>
+                </div>
+                <div class="col-md-6 text-right social-links">
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
