@@ -29,9 +29,9 @@ footer {
     bottom: 0;
     z-index: 1000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    display: flex; /* Utilizar flexbox para alinear elementos */
-    justify-content: space-between; /* Espacio entre los elementos a los lados */
-    align-items: center; /* Centrar verticalmente los elementos */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
  
 }
 
