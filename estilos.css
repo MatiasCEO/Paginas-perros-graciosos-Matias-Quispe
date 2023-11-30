@@ -1,0 +1,41 @@
+
+.navbar-custom {
+    background-color: rgb(224, 175, 39); 
+}
+
+body {
+    margin: 0;
+    background-image: url('imagenes/hapi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgb(219, 141, 52);
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(224, 175, 39); 
+    color: #fff; 
+    padding: 20px; 
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex; /* Utilizar flexbox para alinear elementos */
+    justify-content: space-between; /* Espacio entre los elementos a los lados */
+    align-items: center; /* Centrar verticalmente los elementos */
+ 
+}
+
+.social-links a {
+    color: #fff; 
+    margin-right: 10px; 
+}

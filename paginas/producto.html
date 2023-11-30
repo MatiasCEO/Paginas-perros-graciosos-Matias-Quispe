@@ -5,47 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuadros perro felipe</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../estilos.css">
+
     <style>
-        header {
-            background-color: rgb(219, 141, 52);
-            color: #fff;
-            padding: 20px;
+        body{padding: 0;
+            height: 100vh;
         }
-
-        .navbar-custom {
-            background-color: rgb(224, 175, 39);
-        }
-
-        body {
-            margin: 0;
-            background-image: url('../Imagenes/hapi.jpg');
-            background-size: 100% 100%; /* Ajusta la imagen al ancho y alto del cuerpo */
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-bottom: 100px;
-            color: #fff;
-            background-attachment: fixed; /* Opcional: mantiene la imagen fija al desplazarse */
-        }
-
         .purchase-section {
             padding: 40px 20px;
+            margin-bottom: 100px;
         }
 
         .purchase-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+        display: flex; 
+    gap: 20px;
         }
 
         .purchase-content img {
-            max-width: 100%;
-            height: auto;
+        max-width: 100%;
+        height: auto;
+        flex: 1; 
         }
 
         .purchase-content-text {
-            text-align: left;
+        text-align: left;
+        flex: 1; 
         }
-
         .address-input {
             width: 100%;
             padding: 10px;
@@ -65,25 +50,25 @@
         .Precio {
             font-size: large;
             font-style: italic;
+            color: rgb(86, 231, 67);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 50px;
+
+        }
+        h2{
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 60px; 
         }
 
-        footer {
-            background-color: rgb(224, 175, 39);
-            color: #fff;
-            padding: 20px;
-            width: 100%;
-            position: fixed;
-            bottom: 0;
-        }
+
     </style>
 </head>
 <body>
 
     <!-- Header -->
-    <header class="row">
-        <div class="col-12 text-center">
-            <img src="../Imagenes/LOGO PERROS CAUDRO.png" alt="100px" width="125px"> 
-        </div>
+    <header class="text-center">
+        <img src="../Imagenes/LOGO PERROS CAUDRO.png" alt="Perro cuadro logo" width="125px"> 
     </header>
 
     <!-- Navbar -->
@@ -96,7 +81,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="paginas/acercade.html">Acerca de</a>
+                        <a class="nav-link" href="acercade.html">Acerca de</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="servicios.html">Servicios</a>

@@ -14,59 +14,118 @@
 
         .navbar-custom {
             background-color: rgb(224, 175, 39); 
+            width: 100%;
         }
 
         body {
             margin: 0;
-            background-color: rgb(238, 182, 108);
-            margin-bottom: 100px
+            background-image: url('imagenes/hapi.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow-x: hidden;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: auto;
         }
 
         .carousel-caption {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: top;
+            height: 100%;
             text-align: center;
-            color: #fff; 
+            color: #fff;
+            top: 10%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
         }
 
         .carousel-caption h1 {
-            font-size: 2.5em; 
-            color: rgb(255, 255, 255)
+            font-size: 5em;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
         }
 
         .carousel-caption p {
-            font-size: 1.2em; 
+            font-size: 4em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
         }
                 
         footer {
             background-color: rgb(224, 175, 39); 
             color: #fff; 
-            padding: 20px; 
+            padding: 10px; 
             width: 100%;
-            position: fixed;
+            position: relative;
             bottom: 0;
+            z-index: 1000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex; /* Utilizar flexbox para alinear elementos */
+            justify-content: space-between; /* Espacio entre los elementos a los lados */
+            align-items: center; /* Centrar verticalmente los elementos */
         }
 
         .social-links a {
             color: #fff; 
             margin-right: 10px; 
         }
+        .row{margin: 10px;}
+                @media (min-width: 768px) {
+            .carousel-caption h1 {
+                font-size: 3em;
+            }
+
+            .carousel-caption p {
+                font-size: 2.5em;
+            }
+        }  
+        p{color: white;}
+        @media (max-width: 767px) {
+            .carousel-caption h1 {
+                font-size: 2em;
+            }
+
+            .carousel-caption p {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .carousel-caption h1 {
+                font-size: 1.5em;
+            }
+
+            .carousel-caption p {
+                font-size: 1em;
+            }
+            .col-md-6{font-size: 0.65em;
+            }
+        }
     </style>
 </head>
 <body>
 
     <!-- Header -->
-    <header class="row">
-        <div class="col-12 text-center">
-            <img src="Imagenes/LOGO PERROS CAUDRO.png" alt="100px" width="125px"> 
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img src="Imagenes/LOGO PERROS CAUDRO.png" alt="Perro cuadro logo" width="125px"> 
+                </div>
+            </div>
         </div>
     </header>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-        <div class="container-fluid">
+        <div class="container-fluid p-0" >
             <a class="navbar-brand" href="index.html">Inicio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -107,7 +166,7 @@
         </div>
     </div>
 
-    <div class="container-fluid mt-4">
+    <div class="container mt-4">
         <div class="row">
             <div class="col-md-6">
                 <!-- Video -->
@@ -116,7 +175,8 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in nunc dictum</p>
+                <p>En la empresa Perro Felipe, un espacio donde la creatividad y la originalidad son fundamentales, sobresale la figura del pintor Perro Felipe. Sus pinceles dan vida a un universo de colores vibrantes y formas caprichosas, transformando las simples paredes de la empresa en lienzos dinámicos que reflejan la esencia única del lugar. Con cada trazo, Perro Felipe ha logrado encapsular la identidad creativa de la empresa, convirtiéndose en un símbolo viviente de la innovación que fluye en cada rincón de este espacio artístico.
+                </p>
             </div>
         </div>
     </div>

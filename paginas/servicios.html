@@ -5,25 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuadros perro felipe</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../estilos.css">
+
     <style>
-        header {
-            background-color: rgb(219, 141, 52); 
-            color: #fff;
-            padding: 20px; 
-        }
-
-        .navbar-custom {
-            background-color: rgb(224, 175, 39); 
-        }
-
         body {
-            margin: 0;
-            background-image: url('../imagenes/hapi.jpg'); 
-            background-size: cover; 
-            background-position: center; 
-            background-repeat: no-repeat; 
-            margin-bottom: 100px; 
-            color: #fff; 
+            color: #fff;
         }
 
         .product-section {
@@ -32,9 +18,9 @@
 
         .product {
             display: grid;
-            grid-template-columns: 1fr; 
-            gap: 20px; 
-            margin-bottom: 40px; 
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 40px;
         }
 
         .product img {
@@ -44,6 +30,9 @@
 
         .product-text {
             text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
         }
 
         .buy-button {
@@ -56,26 +45,17 @@
             border-radius: 5px;
             font-weight: bold;
         }
-        footer {
-            background-color: rgb(224, 175, 39); 
-            color: #fff; 
-            padding: 20px;
-            width: 100%;
-            position: fixed;
-            bottom: 0;
-        }
+
     </style>
 </head>
 <body>
 
     <!-- Header -->
-    <header class="row">
-        <div class="col-12 text-center">
-            <img src="../Imagenes/LOGO PERROS CAUDRO.png" alt="100px" width="125px"> 
-        </div>
+    <header class="text-center">
+        <img src="../Imagenes/LOGO PERROS CAUDRO.png" alt="Perro cuadro logo" width="125px">
     </header>
 
-    <!-- navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">Inicio</a>
