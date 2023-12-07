@@ -6,77 +6,7 @@
     <title>Cuadros perro felipe</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../estilos/estilos.css">
-
     <style>
-        body {
-            color: #fff;
-        }
-        @media (max-width: 425px){
-        body{background-size: 590vh;
-            }
-        }    
-
-        .product-section {
-        padding: 40px 20px;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-
-        .product-section.show {
-        animation: fadeInUp 0.5s ease forwards;
-        }
-
-        /* Animación de fadeInUp */
-        @keyframes fadeInUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-            }
-        to {
-        opacity: 1;
-        transform: translateY(0);
-            }
-        }   
-        /* Animación de fadeInUp */
-        .product {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-            margin-bottom: 40px;
-            
-        }
-
-        .product img {
-            max-width: 100%;
-            height: auto;
-            transition: transform 0.3s ease-in-out, transform-origin 0s;
-
-
-        }
-        .product:hover img {
-            transform: scale(1.1); 
-            transform-origin: 50% 50%; 
-        }
-        .product img:not(:hover) {
-            transform: scale(1); 
-        }
-        .product-text {
-            text-align: center;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        .buy-button {
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #fff;
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
     </style>
 </head>
 <body>
@@ -144,18 +74,45 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container p-4">
             <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2023 FelipeCorp</p>
-                </div>
-                <div class="col-md-6 text-right social-links">
-                    <a href="https://facebook.com" target="_blank">Facebook</a>
-                    <a href="https://twitter.com" target="_blank">Twitter</a>
-                    <a href="https://instagram.com" target="_blank">Instagram</a>
-                </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <h5 class="mb-3" style="letter-spacing: 2px; color: #4d2800;">Un poco sobre nosotros</h5>
+                <p>
+                    Con materiales excepcionales y una paleta de colores vibrantes, cada obra de Perro Felipe es una expresión única. Nuestros cuadros no solo decoran, cuentan historias cautivadoras. Sumérgete en la experiencia de la autenticidad y la innovación, descubriendo arte que transforma tus espacios con encanto duradero. En Perro Felipe, no vendemos cuadros, creamos experiencias visuales memorables.                </p>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="mb-3" style="letter-spacing: 2px; color: #4d2800;">Redes Sociales</h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-1">
+                    <a href="#!" style="color: #ffffff;">Twitter</a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="#!" style="color: #ffffff;">Facebook</a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="#!" style="color: #ffffff;">Instagram</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="mb-1" style="letter-spacing: 2px; color: #4d2800;">Horario</h5>
+                <table class="table" style="color: #ffffff; border-color: #ffffff;">
+                  <tbody>
+                    <tr>
+                      <td>Lunes-Viernes:</td>
+                      <td>8am - 9pm</td>
+                    </tr>
+                    <tr>
+                      <td>Sabado-Domingo:</td>
+                      <td>8am - 1am</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-        </div>
+          </div>
+          </div>
     </footer>
 
 
