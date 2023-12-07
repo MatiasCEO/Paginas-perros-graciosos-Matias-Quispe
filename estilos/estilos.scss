@@ -121,38 +121,50 @@ body {
 
 .purchase-content {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+
 
   img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
     flex: 1;
   }
 }
 
 .purchase-content-text {
   text-align: left;
+  padding: 20px;
   flex: 1;
 }
 
 .confirm-button {
+  display: inline-block;
   padding: 10px 20px;
   background-color: #fff;
   color: #000;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
-  cursor: pointer;
 }
 
 .Precio {
-  font-size: large;
+  font-size: x-large;
   font-style: italic;
-  color: rgb(86, 231, 67);
+  color: #56e743;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: 50px;
+  margin-bottom: 20px;
 }
-
+.form-group {
+  margin-bottom: 20px;
+}
+    .address-input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      height: 45px;
+    }
 h2 {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
