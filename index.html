@@ -6,28 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuadros perro felipe</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos/estilo_index.css">
     <style>
-        header {
-            background-color: rgb(219, 141, 52);
-            color: #fff;
-            padding: 20px;
-        }
-
-        .navbar-custom {
-            background-color: rgb(224, 175, 39); 
-            width: 100%;
-        }
-
-        body {
-            margin: 0;
-            background-image: url('imagenes/hapi.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            overflow-x: hidden;
-        }
-
         .carousel-item img {
             width: 100%;
             height: auto;
@@ -57,26 +37,9 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
         }
-
-        footer {
-            background-color: rgb(224, 175, 39); 
-            color: #fff; 
-            padding: 10px; 
-            width: 100%;
-            position: relative;
-            bottom: 0;
-            z-index: 1000;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
+        .row{
+            margin: 10px;
         }
-
-        .social-links a {
-            color: #fff;
-            margin-right: 10px;
-        }
-        .row{margin: 10px;}
                 @media (min-width: 768px) {
             .carousel-caption h1 {
                 font-size: 3em;
@@ -106,6 +69,11 @@
                 font-size: 1em;
             }
             .col-md-6{font-size: 0.65em;
+            }
+        }
+        @media (max-width: 425px) {
+            footer p{
+                font-size: 0.65em;
             }
         }
     </style>
@@ -186,18 +154,45 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
+        <div class="container p-4">
             <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2023 FelipeCorp</p>
-                </div>
-                <div class="col-md-6 text-right social-links">
-                    <a href="https://facebook.com" target="_blank">Facebook</a>
-                    <a href="https://twitter.com" target="_blank">Twitter</a>
-                    <a href="https://instagram.com" target="_blank">Instagram</a>
-                </div>
+              <div class="col-lg-6 col-md-12 mb-4">
+                <h5 class="mb-3" style="letter-spacing: 2px; color: #4d2800;">Un poco sobre nosotros</h5>
+                <p>
+                    Con materiales excepcionales y una paleta de colores vibrantes, cada obra de Perro Felipe es una expresión única. Nuestros cuadros no solo decoran, cuentan historias cautivadoras. Sumérgete en la experiencia de la autenticidad y la innovación, descubriendo arte que transforma tus espacios con encanto duradero. En Perro Felipe, no vendemos cuadros, creamos experiencias visuales memorables.                </p>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="mb-3" style="letter-spacing: 2px; color: #4d2800;">Redes Sociales</h5>
+                <ul class="list-unstyled mb-0">
+                  <li class="mb-1">
+                    <a href="#!" style="color: #ffffff;">Twitter</a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="#!" style="color: #ffffff;">Facebook</a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="#!" style="color: #ffffff;">Instagram</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <h5 class="mb-1" style="letter-spacing: 2px; color: #4d2800;">Horario</h5>
+                <table class="table" style="color: #ffffff; border-color: #ffffff;">
+                  <tbody>
+                    <tr>
+                      <td>Lunes-Viernes:</td>
+                      <td>8am - 9pm</td>
+                    </tr>
+                    <tr>
+                      <td>Sabado-Domingo:</td>
+                      <td>8am - 1am</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-        </div>
+          </div>
+          </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -220,6 +215,10 @@
                 }
             });
         });
+        document.addEventListener("DOMContentLoaded", function() {
+  document.body.classList.add("loaded");
+});
+
     </script>
 </body>
 

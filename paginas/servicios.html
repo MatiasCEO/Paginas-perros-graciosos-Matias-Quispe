@@ -5,36 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuadros perro felipe</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../estilos/estilos.css">
 
     <style>
         body {
             color: #fff;
         }
+        @media (max-width: 425px){
+        body{background-size: 590vh;
+            }
+        }    
 
         .product-section {
-            padding: 40px 20px;
+        padding: 40px 20px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
+        .product-section.show {
+        animation: fadeInUp 0.5s ease forwards;
+        }
+
+        /* Animación de fadeInUp */
+        @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+            }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+            }
+        }   
+        /* Animación de fadeInUp */
         .product {
             display: grid;
             grid-template-columns: 1fr;
             gap: 20px;
             margin-bottom: 40px;
+            
         }
 
         .product img {
             max-width: 100%;
             height: auto;
-        }
+            transition: transform 0.3s ease-in-out, transform-origin 0s;
 
+
+        }
+        .product:hover img {
+            transform: scale(1.1); 
+            transform-origin: 50% 50%; 
+        }
+        .product img:not(:hover) {
+            transform: scale(1); 
+        }
         .product-text {
             text-align: center;
             color: white;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
         }
-
         .buy-button {
             display: block;
             margin: 20px auto;
@@ -87,16 +118,16 @@
                 <div class="product-text">
                     <h3>CUADRO 1</h3>
                     <p>cuadro de perro llamado bruno.</p>
-                    <a href="producto.html" class="buy-button">Comprar 60$</a>
+                    <a href="producto.html" class="buy-button">COMPRAR</a>
                 </div>
             </div>
             <!-- Producto 2 -->
             <div class="col-md-4 product">
-                <img src="../Imagenes/imagen1.jpg" alt="Producto 2" width="92%">
+                <img src="../Imagenes/imagen11.jpg" alt="Producto 2" width="100%">
                 <div class="product-text">
                     <h3>CUADRO 2</h3>
                     <p>Cuadro apaisado de un pero gris.</p>
-                    <a href="producto.html" class="buy-button">Comprar 60$</a>
+                    <a href="producto.html" class="buy-button">COMPRAR</a>
                 </div>
             </div>
             <!-- Producto 3 -->
@@ -105,7 +136,7 @@
                 <div class="product-text">
                     <h3>CUADRO 3    </h3>
                     <p>Cuadro de un perro colorido.</p>
-                    <a href="producto.html" class="buy-button">Comprar 60$</a>
+                    <a href="producto.html" class="buy-button">COMPRAR</a>
                 </div>
             </div>
         </div>
@@ -131,5 +162,20 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Obtén la sección de productos
+            var productSection = document.querySelector('.product-section');
+
+            // Agrega la clase 'show' después de un pequeño retraso (puedes ajustar el valor del retraso)
+            setTimeout(function () {
+                productSection.classList.add('show');
+            }, 500); // 500 milisegundos de retraso
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+  document.body.classList.add("loaded");
+});
+
+    </script>
 </body>
 </html>

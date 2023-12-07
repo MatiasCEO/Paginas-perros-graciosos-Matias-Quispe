@@ -1,0 +1,48 @@
+$color-primary: rgb(224, 175, 39);
+$color-secondary: rgb(219, 141, 52);
+$color-tertiary: rgba(0, 0, 0, 0.5);
+
+body {
+  margin: 0;
+  background-image: url("../imagenes/hapi.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 10%;
+  overflow-x: hidden;
+  height: 100%;
+  opacity: 0;  
+  transition: opacity 1s ease;  
+
+}
+
+body.loaded {
+  opacity: 1;  
+}
+
+header {
+  background-color: $color-secondary;
+  padding: 20px;
+  width: 100%;
+}
+.navbar-custom {
+    background-color: $color-primary 
+  }
+footer {
+  background-color: $color-primary;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  text-shadow: 2px 2px 4px $color-tertiary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links a {
+  color: #fff;
+  margin-right: 10px;
+}

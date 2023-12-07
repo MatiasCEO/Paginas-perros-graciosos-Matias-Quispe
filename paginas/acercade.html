@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuadros perro felipe</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="../estilos/estilos.css">
     <style>
 
-        .navbar-custom {
-            background-color: rgb(224, 175, 39); 
+@media(max-width: 425px){
+    body{
+     margin-bottom: 30%;
         }
-
+    }
         .about-us {
             padding: 40px 20px; 
             color: #ffffff; 
@@ -68,7 +69,7 @@
                 <p>Somos una empresa comprometida con la creación de arte inspirador y único...</p>
             </div>
             <div class="col-md-6">
-                <img src="../Imagenes/perro familia.jpg" class="img-fluid img-right" alt="Imagen Derecha">
+                <img src="../Imagenes/perro familia.jpg" class="img-fluid img-right" alt="Imagen Derecha" style="max-width: 100%;height: auto;">
             </div>
         </div>
     </div>
@@ -92,7 +93,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; 2023 Mi Página</p>
+                    <p>Horario</p>
+                    <p>Lunes a viernes 8:00-19:30</p>
                 </div>
                 <div class="col-md-6 text-right social-links">
                     <a href="https://facebook.com" target="_blank">Facebook</a>
@@ -106,5 +108,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        document.body.classList.add("loaded");
+      });
+      </script>
 </body>
 </html>

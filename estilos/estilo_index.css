@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  background-color: rgb(219, 141, 52);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: rgb(219, 141, 52);
+  color: #fff;
+  padding: 20px;
+}
+
+.navbar-custom {
+  background-color: rgb(224, 175, 39);
+  width: 100%;
+}
+
+footer {
+  background-color: rgb(224, 175, 39);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  z-index: 1000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links a {
+  color: #fff;
+  margin-right: 10px;
+}/*# sourceMappingURL=estilo_index.css.map */
