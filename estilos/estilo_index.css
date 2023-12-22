@@ -1,3 +1,6 @@
+/* Variables de color */
+/* Mixins */
+/* Base Styles */
 body {
   margin: 0;
   background-color: rgb(219, 141, 52);
@@ -31,13 +34,45 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  letter-spacing: 2px;
+  color: #4d2800;
+  /* Estilos para Redes Sociales en el Footer */
+  /* Estilos para el Horario en el Footer */
 }
-
-.social-links a {
+footer .footer-social-section h5 {
+  margin-bottom: 1.5rem;
+  color: #4d2800;
+}
+footer .footer-social-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footer-social-section ul li {
+  margin-bottom: 1rem;
+}
+footer .footer-social-section ul li a {
   color: #fff;
-  margin-right: 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer .footer-social-section ul li a:hover {
+  color: rgb(219, 141, 52);
+}
+footer .footer-schedule-section h5 {
+  margin-bottom: 1rem;
+  color: #4d2800;
+}
+footer .footer-schedule-section table {
+  color: #fff;
+  border-color: #fff;
+  width: 100%;
+}
+footer .footer-schedule-section table td {
+  padding: 0.5rem;
 }
 
+/* Estilos para el Carrusel */
 .carousel-item img {
   width: 100%;
   height: auto;
@@ -57,8 +92,7 @@ footer {
 
 .carousel-caption h1 {
   font-size: 5em;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 
 .carousel-caption p {
@@ -66,10 +100,17 @@ footer {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* Estilos para el Contenido Principal */
 .row {
   margin: 10px;
 }
 
+p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
 @media (min-width: 768px) {
   .carousel-caption h1 {
     font-size: 3em;
@@ -78,11 +119,6 @@ footer {
     font-size: 2.5em;
   }
 }
-p {
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
 @media (max-width: 767px) {
   .carousel-caption h1 {
     font-size: 2em;

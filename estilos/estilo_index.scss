@@ -1,107 +1,179 @@
-body {
-    margin: 0;
-    background-color:rgb(219, 141, 52);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
+/* Variables de color */
+$color-primary: rgb(224, 175, 39);
+$color-secondary: rgb(219, 141, 52);
+$color-tertiary: rgba(0, 0, 0, 0.5);
+
+//variable para el sombreado del texto
+$text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+/* Mixins */
+@mixin transition($properties, $duration, $ease) {
+  transition: $properties $duration $ease;
 }
+
+@mixin text-shadow($value) {
+  text-shadow: $value;
+}
+
+/* Base Styles */
+body {
+  margin: 0;
+  background-color: $color-secondary;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
 header {
-    background-color: rgb(219, 141, 52);
-    color: #fff;
-    padding: 20px;
+  background-color: $color-secondary;
+  color: #fff;
+  padding: 20px;
 }
 
 .navbar-custom {
-    background-color: rgb(224, 175, 39); 
-    width: 100%;
-}
-footer {
-    background-color: rgb(224, 175, 39); 
-    color: #fff; 
-    padding: 10px; 
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    z-index: 1000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
+  background-color: $color-primary;
+  width: 100%;
 }
 
-.social-links a {
-    color: #fff;
-    margin-right: 10px;
+footer {
+  background-color: $color-primary;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  z-index: 1000;
+  @include text-shadow($text-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 2px;
+  color: #4d2800;
+
+  /* Estilos para Redes Sociales en el Footer */
+  .footer-social-section {
+    h5 {
+      margin-bottom: 1.5rem;
+      color: #4d2800;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 1rem;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+  }
+
+  /* Estilos para el Horario en el Footer */
+  .footer-schedule-section {
+    h5 {
+      margin-bottom: 1rem;
+      color: #4d2800;
+    }
+
+    table {
+      color: #fff;
+      border-color: #fff;
+      width: 100%;
+
+      td {
+        padding: 0.5rem;
+      }
+    }
+  }
 }
+
+/* Estilos para el Carrusel */
 .carousel-item img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .carousel-caption {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: top;
-    height: 100%;
-    text-align: center;
-    color: #fff;
-    top: 10%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  top: 10%;
+  @include text-shadow($text-shadow);
 }
-.carousel-caption h1 {
-    font-size: 5em;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
+.carousel-caption h1 {
+  font-size: 5em;
+  color: #fff;
 }
 
 .carousel-caption p {
-    font-size: 4em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 4em;
+  @include text-shadow($text-shadow);
+}
 
+/* Estilos para el Contenido Principal */
+.row {
+  margin: 10px;
 }
-.row{
-    margin: 10px;
-}
-        @media (min-width: 768px) {
-    .carousel-caption h1 {
-        font-size: 3em;
-    }
 
-    .carousel-caption p {
-        font-size: 2.5em;
-    }
-}  
-p{  color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+p {
+  color: white;
+  @include text-shadow($text-shadow);
 }
+
+/* Responsive */
+@media (min-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 3em;
+  }
+
+  .carousel-caption p {
+    font-size: 2.5em;
+  }
+}
+
 @media (max-width: 767px) {
-    .carousel-caption h1 {
-        font-size: 2em;
-    }
+  .carousel-caption h1 {
+    font-size: 2em;
+  }
 
-    .carousel-caption p {
-        font-size: 1.5em;
-    }
+  .carousel-caption p {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 320px) {
-    .carousel-caption h1 {
-        font-size: 1.5em;
-    }
+  .carousel-caption h1 {
+    font-size: 1.5em;
+  }
 
-    .carousel-caption p {
-        font-size: 1em;
-    }
-    .col-md-6{font-size: 0.65em;
-    }
+  .carousel-caption p {
+    font-size: 1em;
+  }
+
+  .col-md-6 {
+    font-size: 0.65em;
+  }
 }
+
 @media (max-width: 425px) {
-    footer p{
-        font-size: 0.65em;
-    }
+  footer p {
+    font-size: 0.65em;
+  }
 }
